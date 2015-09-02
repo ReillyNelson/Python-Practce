@@ -3,7 +3,7 @@ __author__ = 'Reilly'
 
 string = raw_input("What state do you live in?")
 consonant = True
-
+c_string = ""
 for letter in string:
     if letter == "a":
         consonant = False
@@ -15,8 +15,9 @@ for letter in string:
         consonant = False
     elif letter == "u":
         consonant = False
-    elif letter:
-        print(letter)
+    else:
+        c_string = c_string + letter
+print(c_string)
 
 
 
